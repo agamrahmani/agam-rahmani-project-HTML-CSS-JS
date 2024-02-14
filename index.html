@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תיק עבודות - אגם</title>
+    <link rel="stylesheet" href="sass/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="script.js" defer></script>
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="menu-button" onclick="showSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 -960 960 960">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+                <li class="hideOnMobile"><a href="#main"><i class="fa fa-fw fa-home"></i>ראשי</a></li>
+                <li class="hideOnMobile"><a href="#section"><i class="fa fa-address-card"></i>אודות</a></li>
+                <li class="hideOnMobile"><a href="#article"><i class="fa fa-laptop"></i>שירותים</a></li>
+                <li class="hideOnMobile"><a href="#footer"><i class="fa fa-fw fa-envelope"></i>צור קשר</a></li>
+                <li>
+                    <p>אגם רחמני</p>
+                </li>
+                <li><img src="images/agampic.png" alt="picture of agam rahmani"></li>
+            </ul>
+
+            <ul class="sidebar">
+                <li onclick="hideSideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 -960 960 960">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li onclick="hideSideBar()"><a href="#main"><i class="fa fa-fw fa-home"></i>ראשי</a></li>
+                <li onclick="hideSideBar()"><a href="#section"><i class="fa fa-address-card"></i>אודות</a></li>
+                <li onclick="hideSideBar()"><a href="#article"><i class="fa fa-laptop"></i>שירותים</a></li>
+                <li onclick="hideSideBar()"><a href="#footer"><i class="fa fa-fw fa-envelope"></i>צור קשר</a></li>
+            </ul>
+        </nav>
+
+        <div id="main">
+            <div id="width-main">
+                <h1>תיק עבודות</h1>
+                <p>ברוכים הבאים לאתר שלי, כאן תוכלו למצוא מגוון דוגמאות של דפי נחיתה אשר בנויים ממגוון שפות תכנות וכלי
+                    פיתוח
+                    שונים המתאימים לאתרי אינטרנט.
+                    לכל שאלה או בקשה מוזמנים להשאיר פרטים בחלק של צור קשר באתר למטה,<br> אשמח לתת לכם מענה &#128522</p>
+            </div>
+        </div>
+        <div id="skill">
+            <img src="images/img-HTML.png" alt="html">
+            <img src="images/img-CSS.png" alt="css">
+            <img src="images/img-SASS.png" alt="css">
+            <img src="images/img-Bootstrap.png" alt="css">
+            <img src="images/img-JS.png" alt="css">
+        </div>
+    </header>
+
+    <section id="section">
+        <img src="images/agampic.png" alt="picture of agam rahmani">
+        <h1>קצת עלי</h1>
+        <p>שלום, אני אגם רחמני בת 20 מראשון לציון. כיום אני חיילת בתפקיד מנהלת רשת. <br> מגיל קטן אני מתחברת לעולם
+            התוכנה ובעיקר לפיתוח אתרים / אפליקציות. למדתי את זה גם בבית ספר ועשיתי בגרות שקשורה לנושא וכמובן שאני
+            מעוניינת לעבוד בזה. לכתוב קוד שבסוף מוליד תוצר מול העיניים זה הדבר שהכי מספק אותי. <br> אני בן אדם אחראי
+            שאוהב
+            להעשיר את הידע וללמוד גם לבד וזה בדיוק התוכנה שצריך למקצוע הזה</p>
+        <button id="btn" onclick="cv()"><a class="link" href="#" download>להורדת קורות חיים</a></button>
+
+    </section>
+
+    <article id="article">
+        <div id="background-div"></div>
+        <div class="article">
+            <h1>עבודות נבחרות</h1>
+            <p>תצוגה של דפי נחיתה הנדרשים לפרויקט, דף נחיתה מספר 8 הוא דף נחיתה שעשיתי לבד .</p>
+            <div id="gallery"
+                class="d-flex flex-lg-wrap justify-content-lg-between flex-column flex-lg-row align-items-center">
+                <div class="card">
+                    <img src="images/project1.png" class="card-img-top" alt="image of project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">תן לנו להוביל אותך קדימה</h5>
+                        <p class="card-text">דף נחיתה 1</p>
+                        <div id="icon" class="d-flex">
+                            <img src="images/img-HTML.png" alt="html">
+                            <img src="images/img-CSS.png" alt="css">
+                            <img src="images/img-JS.png" alt="js">
+                        </div>
+                        <a href="./displayPage/page1.html" class="btn btn-primary">לעמוד הפרויקט</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/project2.png" class="card-img-top" alt="image of project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Here & Now</h5>
+                        <p class="card-text">דף נחיתה 2</p>
+                        <div id="icon" class="d-flex flex-clowmn">
+                            <img src="images/img-HTML.png" alt="html">
+                            <img src="images/img-CSS.png" alt="css">
+                            <img src="images/img-JS.png" alt="js">
+                        </div>
+                        <a href="./displayPage/page2.html" class="btn btn-primary">לעמוד הפרויקט</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/project3.png" class="card-img-top" alt="image of project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">תן לנו להוביל אותך קדימה</h5>
+                        <p class="card-text">דף נחיתה 3</p>
+                        <div id="icon" class="d-flex flex-clowmn">
+                            <img src="images/img-HTML.png" alt="html">
+                            <img src="images/img-CSS.png" alt="css">
+                            <img src="images/img-JS.png" alt="js">
+                        </div>
+                        <a href="./displayPage/page3.html" class="btn btn-primary">לעמוד הפרויקט</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/project4.png" class="card-img-top" alt="image of project 4">
+                    <div class="card-body">
+                        <h5 class="card-title">לגלות את העולם</h5>
+                        <p class="card-text">דף נחיתה 4</p>
+                        <div id="icon" class="d-flex flex-clowmn">
+                            <img src="images/img-HTML.png" alt="html">
+                            <img src="images/img-CSS.png" alt="css">
+                            <img src="images/img-JS.png" alt="js">
+                        </div>
+                        <a href="./displayPage/page4.html" class="btn btn-primary">לעמוד הפרויקט</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/project5.png" class="card-img-top" alt="image of project 5">
+                    <div class="card-body">
+                        <h5 class="card-title">לחשוב מחוץ לקופסה</h5>
+                        <p class="card-text">דף נחיתה 5</p>
+                        <div id="icon" class="d-flex flex-clowmn">
+                            <img src="images/img-HTML.png" alt="html">
+                            <img src="images/img-CSS.png" alt="css">
+                            <img src="images/img-JS.png" alt="js">
+                        </div>
+                        <a href="./displayPage/page5.html" class="btn btn-primary">לעמוד הפרויקט</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/project6.png" class="card-img-top" alt="image of project 6">
+                    <div class="card-body">
+                        <h5 class="card-title">קפה טוב לבוקר טוב</h5>
+                        <p class="card-text">דף נחיתה 6</p>
+                        <div id="icon" class="d-flex flex-clowmn">
+                            <img src="images/img-HTML.png" alt="html">
+                            <img src="images/img-CSS.png" alt="css">
+                            <img src="images/img-JS.png" alt="js">
+                        </div>
+                        <a href="./displayPage/page6.html" class="btn btn-primary">לעמוד הפרויקט</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/project7.png" class="card-img-top" alt="image of project 7">
+                    <div class="card-body">
+                        <h5 class="card-title">ייעוץ חינם</h5>
+                        <p class="card-text">דף נחיתה 7</p>
+                        <div id="icon" class="d-flex flex-clowmn">
+                            <img src="images/img-HTML.png" alt="html">
+                            <img src="images/img-CSS.png" alt="css">
+                            <img src="images/img-JS.png" alt="js">
+                        </div>
+                        <a href="./displayPage/page7.html" class="btn btn-primary">לעמוד הפרויקט</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/project8.png" class="card-img-top" alt="image of project 8">
+                    <div class="card-body">
+                        <h5 class="card-title">ניבה קשת</h5>
+                        <p class="card-text">דף נחיתה 8
+                        </p>
+                        <div id="icon" class="d-flex flex-clowmn">
+                            <img src="images/img-HTML.png" alt="html">
+                            <img src="images/img-CSS.png" alt="css">
+                            <img src="images/img-JS.png" alt="js">
+                        </div>
+                        <a href="./displayPage/page8.html" class="btn btn-primary">לעמוד הפרויקט</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer id="footer">
+        <div id="contact-us" class="d-xl-flex">
+            <div id="image">
+                <img src="images/Rectangle.png" alt="Rectangle image">
+            </div>
+
+            <form class="row mb-xl-3 mb-1">
+                <h1>צור קשר</h1>
+                <p>לקבלת פרטים נוספים מוזמנים למלא את הפרטים ואחזור אליכם בהקדם!</p>
+                <div class="mb-xl-3 mb-1">
+                    <label for="name" class="form-label">שם מלא</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-xl-3 mb-1">
+                    <label for="email" class="form-label">דו״אל</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-xl-3 mb-1">
+                    <label for="phone" class="form-label">טלפון</label>
+                    <input type="tel" class="form-control" id="phone" required>
+
+                </div>
+                <div class="mb-xl-3 mb-1">
+                    <label for="Textarea" class="form-label">תוכן ההודעה</label>
+                    <textarea class="form-control" id="Textarea" rows="3" required></textarea>
+                </div>
+                <div class="mb-xl-3 mb-1">
+                    <button type="submit" class="btn btn-primary mb-3">שליחה</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="box-icon" class="d-flex justify-content-center align-items-center">
+            <div class="icon">
+                <a href="https://www.instagram.com/agam.rahmani?igsh=MWN4eDdpeHg4N3A4dw%3D%3D&utm_source=qr">
+                    <img src="images/instagram.png" alt="icon instagram">
+                </a>
+            </div>
+            <div class="icon">
+                <a
+                    href="https://api.whatsapp.com/send?phone=972503044801&text=היי+אני+מעוניין+בשירות+בניית+אתרים,+אשמח+לפרטים+נוספים">
+                    <img src="images/whatsapp.png" alt="icon whatsapp">
+                </a>
+            </div>
+            <div class="icon">
+                <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=ramaniagam2904@gmail.com&su=בניית+אתרים&body=היי+אני+מעוניין+בשירות+בניית+אתרים+אשמח+לפרטים+נוספים">
+                    <img src="images/email.png" alt="icon email">
+                </a>
+            </div>
+            <div class="icon">
+                <a href="tel://050-3044801">
+                    <img src="images/call.png" alt="icon phone">
+                </a>
+            </div>
+        </div>
+
+        <div id="box-name" class="d-flex justify-content-between">
+            <p>אגם רחמני</p>
+            <p>כל הזכויות שמורות &copy;</p>
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>

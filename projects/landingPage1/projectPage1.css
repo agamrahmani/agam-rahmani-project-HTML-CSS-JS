@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container-background-image img {
+    width: 100vw;
+    height: 55vh;
+    position: absolute;
+}
+
+#container-background-image-mini img {
+    display: none;
+}
+
+#container-form {
+    direction: rtl;
+    width: 30vw;
+    height: 65vh;
+    background: #1A1A1AD4 0% 0% no-repeat padding-box;
+    position: absolute;
+    top: 14.5vh;
+    right: 15.4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container-form-title {
+    width: 21.77vw;
+}
+
+form {
+    width: 21.77vw;
+    margin-top: 2em;
+}
+
+h1 {
+    text-align: right;
+    font: normal normal 900 2.25rem/3.3125rem Heebo;
+    color: #FFFFFF;
+    margin-top: 2em;
+}
+
+p {
+    text-align: right;
+    font: normal normal normal 1.25rem/1.8125rem Heebo;
+    color: #F9F9F9;
+    margin-top: 1em;
+}
+
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 0;
+}
+
+label {
+    text-align: right;
+    font: normal normal bold 1em/1.5em Heebo;
+    color: #FFFFFF;
+}
+
+#name,
+#email {
+    text-align: right;
+    font: normal normal bold 1em/1.5em Heebo;
+    width: 100%;
+    height: 4.6vh;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #D31C75;
+}
+
+#submit {
+    text-align: center;
+    font: normal normal bold 1em/1.5em Heebo;
+    letter-spacing: 0.33px;
+    color: #FFFFFF;
+    background: #D31C75 0% 0% no-repeat padding-box;
+    width: 8.6vw;
+    height: 4.6vh;
+    margin: 1em 0;
+
+}
+
+
+@media screen and (max-width: 1200px) {
+    #container-background-image img {
+        display: none;
+    }
+
+    #container-background-image-mini img {
+        display: block;
+        width: 100vw;
+        height: 32.4vh;
+        position: absolute;
+    }
+
+    #container-form {
+        width: 80.75vw;
+        height: 67vh;
+        top: 89px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    #container-form-title {
+        width: 62.1vw;
+    }
+
+    h1 {
+        font: normal normal 900 1.5625rem/1.875rem Heebo;
+        width: 40vw;
+        margin: auto auto;
+        margin-top: 1.5em;
+    }
+
+    p {
+        text-align: center;
+        font: normal normal normal 0.9375em/1.375em Heebo;
+    }
+
+    form {
+        width: 62.1vw;
+        margin-top: 0.3em;
+    }
+
+    label {
+        font: normal normal bold 0.875em/1.3125em Heebo;
+        margin-top: 1em;
+    }
+
+    #email,
+    #name {
+        font: normal normal bold 0.875em/1.3125em Heebo;
+        width: 62.16vw;
+        height: 4.25vh;
+    }
+
+    #submit {
+        font: normal normal bold 0.9375em/1.25em Heebo;
+        width: 20.54vw;
+        height: 5vh;
+        margin-top: 0.2em;
+
+    }
+}
+
+@media screen and (max-width: 280px) {
+    #container-form {
+        height: 70vh;
+    }
+}

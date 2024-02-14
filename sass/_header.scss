@@ -1,0 +1,155 @@
+header nav {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    direction: rtl;
+    background-color: #F6E7CD;
+    box-shadow: 0px 0px 20px wheat;
+    width: 100vw;
+    height: 8vh;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        li {
+            height: 8vh;
+
+            a {
+                padding: 0 30px;
+            }
+        }
+    }
+
+    ul li img {
+        margin-left: 30px;
+        height: 100%;
+        border-radius: 100%;
+    }
+
+    ul li a,
+    ul li p {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        font: normal normal normal 1.125rem Fredoka;
+        text-decoration: none;
+        color: black;
+    }
+
+    ul li a:visited {
+        color: black;
+    }
+
+    li:nth-child(6) {
+        margin-right: auto;
+    }
+
+    ul li svg {
+        height: 3vh;
+    }
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #f6e7cdc3;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 20px wheat;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+a:hover {
+    background-color: #F6E7CD
+}
+
+#menu-button {
+    display: none;
+}
+
+#main {
+    direction: rtl;
+    margin-top: 8vh;
+    background-color: $bgc-div;
+    width: 100vw;
+    height: 43vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #width-main {
+        width: 70%;
+
+        h1 {
+            text-align: center;
+            font: normal normal bold 5rem/7.375rem Rubik Scribble;
+            color: rgba(182, 153, 112, 0.667);
+        }
+
+        p {
+            text-align: center;
+            font: normal normal normal 1.25rem/1.875rem Fredoka;
+            color: rgb(130, 109, 81);
+        }
+    }
+}
+
+#skill {
+    background-color: $bgc;
+    box-shadow: 0px 0px 20px wheat;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+    header {
+        .hideOnMobile {
+            display: none;
+        }
+
+        #menu-button {
+            display: block;
+        }
+
+        .sidebar {
+            width: 100vw;
+            height: 50vh;
+        }
+    }
+
+    #main {
+        height: 50vh;
+
+        #width-main {
+            width: 80%;
+
+            h1 {
+                font: normal normal bold 2.875rem/4.1875rem Rubik Scribble;
+            }
+
+            p {
+                font: normal normal normal 0.9375rem/1.5625rem Fredoka;
+            }
+        }
+    }
+
+    #skill {
+        img {
+            width: 12vw;
+        }
+    }
+}

@@ -1,0 +1,140 @@
+article {
+    #background-div {
+        width: 100vw;
+        height: 8vh;
+        background-color: $bgc-div;
+    }
+
+    .article {
+        direction: rtl;
+        width: 100vw;
+        height: 144vh;
+        background-color: $bgc-div;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            font: normal normal bold 2.1875rem/3.25rem Rubik Scribble;
+            color: rgba(182, 153, 112, 0.667);
+        }
+
+        p {
+            text-align: center;
+            font: normal normal normal 1.25rem/1.8125rem Fredoka;
+            color: rgb(130, 109, 81);
+        }
+    }
+
+
+    #gallery {
+        height: 73%;
+        width: 67%;
+
+        .card {
+            z-index: 1;
+            width: 23%;
+            height: 48%;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+
+            h5 {
+                text-align: center;
+                font: normal normal bold 1.25rem/1.8125rem Fredoka;
+                color: rgb(130, 109, 81);
+            }
+
+            p {
+                text-align: center;
+                font: normal normal normal 0.875rem/1.375rem Fredoka;
+            }
+
+            #icon {
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+
+        .btn-primary {
+            color: rgb(130, 109, 81);
+            text-decoration: none;
+            background-color: $bgc;
+            border-color: $bgc;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    article {
+        .article {
+            direction: rtl;
+            width: 100vw;
+            height: 483vh;
+
+            h1 {
+                font: normal normal bold 1.5625rem/2.3125rem Rubik Scribble;
+            }
+
+            p {
+                text-align: center;
+                font: normal normal normal 0.875rem/1.375rem Fredoka;
+            }
+        }
+
+        #gallery {
+            width: 80%;
+            height: 90%;
+
+            .card {
+                width: 100%;
+                height: 20%;
+                margin: 1em;
+            }
+
+            .card-body {
+                h5 {
+                    font: normal normal bold 1rem/1.5rem Fredoka;
+                }
+
+                p {
+                    font: normal normal normal 1rem/1.5rem Fredoka;
+                }
+
+                #icon {
+                    img {
+                        width: 22px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-height: 576px) and (max-width:992px) {
+    article {
+        .article {
+            width: 100vw;
+            height: 550vh;
+        }
+
+        #gallery {
+            width: 80%;
+            height: 90%;
+
+            .card {
+                width: 100%;
+                height: 20%;
+                margin: 1em;
+            }
+
+        }
+    }
+}

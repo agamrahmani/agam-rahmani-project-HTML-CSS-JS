@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 70vh;
+}
+
+#container-img {
+    width: 40vw;
+}
+
+#container-form-title {
+    width: 82%;
+}
+
+form {
+    width: 82%;
+}
+
+#background-box {
+    width: 22vw;
+    height: 1vh;
+    background: #FDBD03 0% 0% no-repeat padding-box;
+    position: absolute;
+    right: 0;
+}
+
+#container-img img {
+    width: 80%;
+    height: 100%;
+    margin-top: 7vh;
+}
+
+#box-icon-whatsapp {
+    display: flex;
+    position: absolute;
+    top: 6vh;
+    left: 3.4vw;
+}
+
+#iconWhatsapp {
+    background: #FDBD03 0% 0% no-repeat padding-box;
+    width: 95px;
+    height: 95px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#iconWhatsapp img {
+    width: 54px;
+    height: 54px;
+}
+
+#container-form {
+    direction: rtl;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8em;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+    width: 100%;
+}
+
+.form-control>label {
+    font: normal normal bold 1rem/1.5rem Heebo;
+    color: #2C2C2C;
+}
+
+.form-control>input {
+    font: normal normal bold 1rem/1.5rem Heebo;
+    height: 4.629vh;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: 0;
+    border-bottom: 4px solid #FDBD03;
+}
+
+#information {
+    font: normal normal bold 1rem/1.5rem Heebo;
+    height: 13.4vh;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: 0;
+    border-bottom: 4px solid #FDBD03;
+}
+
+
+#submit {
+    width: 20%;
+    height: 4.629vh;
+    background: #FDBD03 0% 0% no-repeat padding-box;
+    font: normal normal bold 1.375rem/1.875rem Heebo;
+    letter-spacing: 0.33px;
+    color: #000000;
+}
+
+#container-form-title>h1 {
+    text-align: right;
+    font: normal normal 900 4.125rem/6.0625rem Heebo;
+    color: #FDBD03;
+}
+
+#container-form-title>p {
+    text-align: right;
+    font: normal normal normal 1.25rem/1.8125rem Heebo;
+    color: #020253;
+}
+
+footer {
+    height: 29vh;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+#boxes-icon {
+    display: flex;
+}
+
+.icon {
+    width: 5vw;
+    height: 8.8vh;
+    background: #FDBD03 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+footer .icon img {
+    width: 1.6vw;
+    height: 3vh;
+
+}
+
+#background-footer {
+    width: 55vw;
+    height: 1vh;
+    background: #FDBD03 0% 0% no-repeat padding-box;
+}
+
+@media screen and (max-width:1200px) {
+    #container {
+
+        height: 102vh;
+    }
+
+    #box-icon-whatsapp {
+        display: none;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+
+    #container-img {
+        width: 100vw;
+    }
+
+    #center-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    #container-img img {
+        width: 21.35%;
+        height: 18vh;
+    }
+
+    #background-box {
+        width: 86.5vw;
+        height: 1.5vh;
+        background: #FDBD03 0% 0% no-repeat padding-box;
+        position: absolute;
+        right: 0;
+    }
+
+    #container-form {
+        width: 77.3vw;
+        margin: 3em auto;
+    }
+
+    #container-form-title {
+        width: 77.3vw;
+    }
+
+    form {
+        width: 77.3vw;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    .form-control>label {
+        font: normal normal bold 0.625rem/0.875rem Heebo;
+    }
+
+    .form-control>input {
+        font: normal normal bold 0.625rem/0.875rem Heebo;
+        height: 5vh;
+        border: 0;
+        border-bottom: 3px solid #FDBD03;
+    }
+
+    #information {
+        font: normal normal bold 0.625rem/0.875rem Heebo;
+        height: 15.6vh;
+    }
+
+    #submit {
+        width: 100%;
+        height: 5vh;
+        font: normal normal bold 0.875rem/1.1875rem Heebo;
+        letter-spacing: 0.23px;
+    }
+
+    #container-form-title>h1 {
+        font: normal normal 900 2.5rem/3.6875rem Heebo;
+    }
+
+    #container-form-title>p {
+        font: normal normal normal 0.9375rem/1.375rem Heebo;
+    }
+
+    footer {
+        height: 20vh;
+        justify-content: center;
+    }
+
+    .icon {
+        width: 12.43vw;
+        height: 7vh;
+    }
+
+    footer .icon img {
+        width: 4vw;
+        height: 2.3vh;
+    }
+
+    #background-footer {
+        width: 100vw;
+        height: 1.5vh;
+    }
+}

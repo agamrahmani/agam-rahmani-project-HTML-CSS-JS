@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container-background-image img {
+    width: 100vw;
+    height: 68.7vh;
+    position: absolute;
+}
+
+#container-background-image-mini img {
+    display: none;
+}
+
+#container-text {
+    width: 100vw;
+    height: 68.7vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    direction: rtl;
+}
+
+h1 {
+    text-align: center;
+    font: normal normal bold 5.375rem/7.0625rem Assistant;
+    color: #D3E10E;
+}
+
+p {
+    text-align: center;
+    font: normal normal normal 1.25em/1.625em Assistant;
+    color: #F9F9F9;
+}
+
+#container-form {
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 75vh;
+}
+
+form {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 0 1em;
+
+}
+
+.form-control>label {
+    font-size: 1em;
+    text-align: center;
+    font: normal normal bold 1em/1.3125em Assistant;
+    color: #011560;
+}
+
+.form-control>input {
+    text-align: right;
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+    font: normal normal bold 1em/1.3125em Assistant;
+    border: 0;
+    border-bottom: 2px solid #D3E10E;
+    width: 21.5vw;
+    height: 4.6vh;
+}
+
+#submit {
+    text-align: center;
+    font: normal normal bold 1.375rem/1.375rem Assistant;
+    letter-spacing: 0.33px;
+    color: #011560;
+    background: #D3E10E 0% 0% no-repeat padding-box;
+    border: 2px solid #D3E10E;
+    margin: 0 1em;
+    width: 8.6vw;
+    height: 4.6vh;
+}
+
+
+.item label {
+    visibility: hidden;
+
+}
+
+@media screen and (max-width:1200px) {
+    #container-background-image img {
+        display: none;
+    }
+
+    #container-text {
+        display: none;
+    }
+
+    #container-background-image-mini img {
+        display: block;
+        position: absolute;
+        width: 100vw;
+        height: 45.6vh;
+    }
+
+    #container-form {
+        width: 100vw;
+        position: absolute;
+        display: flex;
+        margin-top: 60.6vh;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    .form-control {
+        margin: 0.5em 0;
+
+    }
+
+    .form-control>label {
+        font: normal normal bold 0.625em/0.875em Heebo;
+    }
+
+    .form-control>input {
+        font: normal normal bold 0.4375rem/0.625rem Heebo;
+        width: 77.2vw;
+        height: 5.2vh;
+    }
+
+    #submit {
+        text-align: center;
+        font: normal normal bold 0.875em/1.1875em Heebo;
+        letter-spacing: 0.013125em;
+        margin: 0 0;
+        width: 77.2vw;
+        height: 5.2vh;
+    }
+}

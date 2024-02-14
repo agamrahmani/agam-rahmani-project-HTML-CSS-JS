@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #E5EEFF;
+    display: grid;
+    justify-content: center;
+}
+
+#container {
+    padding: 13em 0;
+    width: 64.8vw;
+    display: grid;
+    gap: 1.25rem;
+    grid-template-areas:
+        "img1 img2 aside aside"
+        "img3 img4 aside aside"
+        "img5 img6 img7 img8"
+        "section section img9 img10"
+        "section section img11 img12"
+        "section section img13 img14";
+}
+
+img {
+    width: 15vw;
+    height: 25vh;
+}
+
+aside {
+    direction: rtl;
+    grid-area: aside;
+    background: #020253;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+aside h1 {
+    color: #0EE1DA;
+    font: normal normal bold Assistant;
+    font-size: 3.8125rem;
+    text-align: center;
+}
+
+aside p {
+    color: #fff;
+    font-family: normal normal normal Assistant;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+section {
+    direction: rtl;
+    grid-area: section;
+    background: #8E097C;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+section h1 {
+    color: #fff;
+    font: normal normal bold Assistant;
+    font-size: 2.1875rem;
+    text-align: center;
+}
+
+section p {
+    color: #fff;
+    font: normal normal normal Assistant;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+section form {
+    display: block;
+    width: 26.04vw;
+    justify-content: space-between;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 1em 0;
+}
+
+label {
+    text-align: right;
+    font: normal normal bold Heebo;
+    font-size: 1rem;
+    color: #0EE1DA;
+}
+
+#name,
+#email {
+    text-align: right;
+    font: normal normal bold Heebo;
+    font-size: 1rem;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: 0;
+    border-bottom: 5px solid #0EE1DA;
+    width: 26.04vw;
+    height: 5.5vh;
+}
+
+#infoExperience {
+    text-align: right;
+    font: normal normal bold Heebo;
+    font-size: 1rem;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: 0;
+    border-bottom: 5px solid #0EE1DA;
+    width: 26.04vw;
+    height: 15.9vh;
+}
+
+#submit {
+    text-align: center;
+    font: normal normal bold 1.5rem/2.0625rem Heebo;
+    font-size: 1.5rem;
+    letter-spacing: 0.36px;
+    color: #011560;
+    background: #0EE1DA 0% 0% no-repeat padding-box;
+    width: 26.04vw;
+    height: 5.5vh;
+}
+
+@media screen and (max-width:1200px) {
+    #container {
+        padding: 1em 0;
+        margin-top: 52vh;
+        width: 89.18vw;
+        gap: 0.75rem;
+        grid-template-areas:
+            "img1 img2"
+            "img3 img4"
+            "img5 img6"
+            "img7 img8"
+            "section section"
+            "section section"
+            "section section"
+            "img9 img10"
+            "img11 img12"
+            "img13 img14";
+    }
+
+    img {
+        width: 43vw;
+        height: 22.2vh;
+    }
+
+    aside {
+        width: 100vw;
+        height: 52vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    aside h1 {
+        font: normal normal bold 2.25rem/2.9375rem Assistant;
+    }
+
+    aside p {
+        font: normal normal normal 1.25rem/1.625rem Assistant;
+    }
+
+    section h1 {
+        font: normal normal bold 1.5625rem/2.0625rem Assistant;
+    }
+
+    section p {
+        font: normal normal normal 0.9375rem/1.1875rem Assistant;
+    }
+
+    section form {
+        width: 75.135vw;
+    }
+
+    label {
+        font: normal normal bold 0.4375rem/0.625rem Heebo;
+    }
+
+    #name,
+    #email {
+        font: normal normal bold 0.4375rem/0.625rem Heebo;
+        border-bottom: 3px solid #0EE1DA;
+        width: 75.135vw;
+        height: 5vh;
+    }
+
+    #infoExperience {
+        background: #E5EEFF;
+        border-bottom: 3px solid #0EE1DA;
+        width: 75.135vw;
+        height: 14.6vh;
+    }
+
+    #submit {
+        font: normal normal bold 0.75rem/1rem Heebo;
+        letter-spacing: 0.01125rem;
+        color: #011560;
+        background: #0EE1DA;
+        width: 75.135vw;
+        height: 5vh;
+    }
+}

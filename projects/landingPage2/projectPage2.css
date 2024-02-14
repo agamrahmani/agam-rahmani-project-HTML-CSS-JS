@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#container {
+    width: 64vw;
+    height: 47vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: left;
+    font: normal normal normal 10rem/14.4375rem Satisfy;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 36px #00000087;
+}
+
+h2 {
+    direction: rtl;
+    text-align: center;
+    font: normal normal normal 2rem/2.375rem Varela Round;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+p,
+label {
+    direction: rtl;
+    text-align: center;
+    font: normal normal normal 1rem/1.25rem Varela Round;
+    color: #F9F9F9;
+}
+
+form {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 57.3vw;
+}
+
+#name,
+#email {
+    text-align: right;
+    background: #F6F6F624 0% 0% no-repeat padding-box;
+    font: normal normal normal 1rem/1.25rem Varela Round;
+    border: 2px solid #FFFFFF;
+    width: 21.77vw;
+    height: 4.6vh;
+}
+
+#submit {
+    text-align: center;
+    font: normal normal normal 1rem/1.25rem Varela Round;
+    color: #1C1C1C;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid #ffffff;
+    width: 10.7vw;
+    height: 4.6vh;
+}
+
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding: 3em 1em;
+}
+
+.item3 label {
+    visibility: hidden;
+
+}
+
+@media screen and (max-width:1200px) {
+
+    #container {
+        width: 87vw;
+        height: 77vh;
+        justify-content: center;
+    }
+
+    h1 {
+        text-align: center;
+        font: normal normal normal 3.75rem/5.375rem Satisfy;
+    }
+
+    h2 {
+        font: normal normal normal 1.125rem/1.375rem Varela Round;
+    }
+
+    p {
+        padding-top: 1em;
+        font: normal normal normal 1rem/1.25rem Varela Round;
+    }
+
+    label {
+        font: normal normal normal 0.6875rem/0.8125rem Varela Round;
+    }
+
+    form {
+        padding-top: 3em;
+        display: block;
+        flex-direction: column;
+        width: 81.62vw;
+    }
+
+
+    #name,
+    #email {
+        font: normal normal normal 0.6875rem/0.8125rem Varela Round;
+        width: 81.62vw;
+        height: 5.5vh;
+    }
+
+    #submit {
+        text-align: center;
+        font: normal normal normal 0.6875rem/0.8125rem Varela Round;
+        color: #2823FD;
+        width: 81.62vw;
+        height: 5.5vh;
+    }
+
+    .form-control {
+        padding: 0.3em 0;
+    }
+}

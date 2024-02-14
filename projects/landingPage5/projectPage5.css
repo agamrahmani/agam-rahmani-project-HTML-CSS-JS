@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#title {
+    width: 100vw;
+    height: 58.7vh;
+    background: #0EE1E1 0% 0% no-repeat padding-box;
+}
+
+#title>img {
+    width: 325px;
+    height: 267px;
+    position: absolute;
+    top: 17vh;
+    right: 7.8vw;
+}
+
+.text-part1 {
+    direction: rtl;
+    width: 787px;
+    position: absolute;
+    right: 34.2vw;
+    top: 21.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-part1 h1 {
+    font: normal normal 900 4.125rem/6.0625rem Heebo;
+    color: #000000;
+}
+
+.text-part1 p {
+    font: normal normal normal 1.25rem/1.8125rem Heebo;
+    color: #000000;
+}
+
+#box-icon-whatsapp {
+    display: flex;
+    position: absolute;
+    top: 6vh;
+    left: 3.4vw;
+}
+
+#iconWhatsapp {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    width: 95px;
+    height: 95px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#iconWhatsapp img {
+    width: 54px;
+    height: 54px;
+}
+
+#boxes-part2 {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    direction: rtl;
+    background: #F8F8F8 0% 0% no-repeat padding-box;
+    width: 450px;
+    height: 329px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 23px;
+}
+
+.box img {
+    width: 63px;
+    height: 44px;
+}
+
+.box h1 {
+    text-align: center;
+    font: normal normal 900 1.875rem/2.75rem Heebo;
+    color: #0EE1E1;
+}
+
+.box p {
+    text-align: center;
+    font: normal normal normal 0.9375rem/1.375rem Heebo;
+    color: #000000;
+}
+
+#boxes-part3 {
+    display: flex;
+    height: 87vh;
+}
+
+#container-form {
+    width: 43vw;
+    background: #F0FFFF 0% 0% no-repeat padding-box;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container-form-title {
+    width: 50%;
+    margin-top: 5em;
+}
+
+#container-form-title>h1 {
+    text-align: right;
+    font: normal normal 900 2.875rem/4.1875rem Heebo;
+    color: #090909;
+}
+
+#container-form-title>p {
+    text-align: right;
+    font: normal normal normal 0.9375rem/1.375rem Heebo;
+    color: #000000;
+    margin-top: 1em;
+}
+
+form {
+    width: 50%;
+    margin-top: 2em;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 0;
+    width: 100%;
+}
+
+.form-control>label {
+    font: normal normal bold 0.8125rem/1.1875rem Heebo;
+    color: #2C2C2C;
+}
+
+.form-control>input {
+    height: 4.6vh;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    font: normal normal bold 0.8125rem/1.1875rem Heebo;
+    border: 0;
+    border-bottom: 5px solid #0EE1E1;
+}
+
+#information {
+    height: 13.4vh;
+    font: normal normal bold 0.8125rem/1.1875rem Heebo;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: 0;
+    border-bottom: 5px solid #0EE1E1;
+}
+
+#submit {
+    width: 100%;
+    height: 4.6vh;
+    background: #0EE1E1 0% 0% no-repeat padding-box;
+    font: normal normal bold 1.25rem/1.75rem Heebo;
+    letter-spacing: 0.3px;
+    color: #000000;
+}
+
+aside {
+    width: 57vw;
+    background: #0EE1E1 0% 0% no-repeat padding-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside iframe {
+    width: 49vw;
+    height: 71vh;
+}
+
+footer {
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boxes-icon {
+    display: flex;
+}
+
+.icon {
+    width: 5vw;
+    height: 8.8vh;
+    background: #0EE1E1 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .icon img {
+    width: 1.6vw;
+    height: 3vh;
+
+}
+
+#border {
+    width: 100vw;
+    height: 1.76vh;
+    background: #0EE1E1;
+}
+
+
+@media screen and (max-width:1200px) {
+    #title {
+        height: 60vh;
+    }
+
+    #title img {
+        width: 21.35vw;
+        height: 9.9vh;
+        top: 11vh;
+        right: 9vw;
+    }
+
+    #box-icon-whatsapp {
+        display: none;
+    }
+
+    .text-part1 {
+        width: 76.5vw;
+        right: 11vw;
+        top: 27.7vh;
+    }
+
+    .text-part1 h1 {
+        font: normal normal 900 2.0625rem/3.0625rem Heebo;
+    }
+
+    .text-part1 p {
+        font: normal normal normal 0.9375rem/1.375rem Heebo;
+    }
+
+    #boxes-part2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 91vw;
+        height: 37.6vh;
+        margin: 1.25em;
+    }
+
+    .box h1 {
+        font: normal normal 900 1.375rem/2rem Heebo;
+    }
+
+    #boxes-part3 {
+        flex-direction: column;
+        height: 140vh;
+    }
+
+    #container-form {
+        width: 100vw;
+    }
+
+    #container-form-title {
+        width: 83%;
+    }
+
+    #container-form-title>h1 {
+        font: normal normal 900 2rem/2.9375rem Heebo;
+    }
+
+    #container-form-title>p {
+        font: normal normal normal 0.9375rem/1.375rem Heebo;
+    }
+
+    form {
+        width: 83%;
+        margin-top: 0;
+    }
+
+
+    .form-control>label {
+        font: normal normal bold 0.75rem/1.125rem Heebo;
+    }
+
+    .form-control>input {
+        height: 5.63vh;
+        font: normal normal bold 0.75rem/1.125rem Heebo;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 0;
+        border-bottom: 3px solid #0EE1E1;
+        margin: 0 0;
+    }
+
+    #information {
+        height: 16vh;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 0;
+        border-bottom: 3px solid #0EE1E1;
+    }
+
+    #submit {
+        height: 5.63vh;
+        font: normal normal bold 0.8125rem/1.1875rem Heebo;
+        letter-spacing: 0.2px;
+    }
+
+    aside {
+        width: 100vw;
+        height: 47.416vh;
+    }
+
+    aside iframe {
+        width: 85vw;
+        height: 36.77vh;
+    }
+
+    footer {
+        height: 21vh;
+        border: 0;
+        border-bottom: 10px solid #0EE1E1;
+    }
+
+    .icon {
+        width: 12.43vw;
+        height: 7vh;
+    }
+
+    footer .icon img {
+        width: 4vw;
+        height: 2.3vh;
+    }
+
+    #border {
+        height: 1.5vh;
+    }
+}

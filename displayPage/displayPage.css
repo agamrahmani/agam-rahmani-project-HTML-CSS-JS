@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    direction: rtl;
+    background-color: #F6E7CD;
+    box-shadow: 0px 0px 20px wheat;
+    width: 100vw;
+    height: 8vh;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 8vh;
+}
+
+nav ul li img {
+    margin-left: 5vw;
+    height: 100%;
+    border-radius: 100%;
+}
+
+nav ul li a {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font: normal normal normal 1.125rem Fredoka;
+    text-decoration: none;
+    color: black;
+}
+
+
+nav ul li a:visited {
+    color: black;
+}
+
+#information {
+    margin-top: 1em;
+    background-color: #FFF7E9;
+    width: 100vw;
+    height: 43vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+}
+
+#information h1 {
+    font: normal normal bold 5rem/7.375rem Rubik Scribble;
+    color: rgba(182, 153, 112, 0.667);
+}
+
+#information p {
+    font: normal normal normal 1.25rem/1.875rem Fredoka;
+    color: rgb(130, 109, 81);
+}
+
+#information #btn {
+    display: flex;
+}
+
+#information button {
+    width: 8vw;
+    font: normal normal normal 0.875rem/1.625rem Fredoka;
+    background: #F6E7CD;
+    border-radius: 10px;
+    margin: 1em;
+}
+
+.link {
+    color: rgb(130, 109, 81);
+}
+
+#btn a {
+    text-decoration: none;
+}
+
+#btn a:visited {
+    color: rgb(130, 109, 81);
+}
+
+#icon {
+    background-color: #F6E7CD;
+    box-shadow: 0px 0px 20px wheat;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon img {
+    width: 100px;
+    height: 100px;
+}
+
+#img-of-project {
+    width: 100vw;
+    height: 94vh;
+    background-color: #FFF7E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-of-project img {
+    width: 62vw;
+    height: 66vh;
+    box-shadow: 0px 0px 20px #00000066;
+    ;
+
+}
+
+footer {
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F6E7CD;
+    box-shadow: 0px 0px 20px wheat;
+    font: normal normal normal 1rem Fredoka;
+    color: black;
+}
+
+@media screen and (max-width: 1200px) {
+    #information {
+        height: 50vh;
+    }
+
+    #information h1 {
+        text-align: center;
+        font: normal normal bold 2.875rem/4.1875rem Rubik Scribble;
+    }
+
+    #information p {
+        font: normal normal normal 0.9375rem/1.5625rem Fredoka;
+        text-align: center;
+    }
+
+    #information button {
+        width: 36.5vw;
+        font: normal normal normal 0.75rem/1.375rem Fredoka;
+    }
+
+    #img-of-project {
+        height: 80vh;
+    }
+
+    #img-of-project img {
+        width: 80vw;
+        height: 50vh;
+    }
+
+    footer {
+        font: normal normal normal 0.875em Fredoka;
+    }
+}

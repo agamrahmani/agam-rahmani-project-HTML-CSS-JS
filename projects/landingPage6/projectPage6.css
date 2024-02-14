@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+}
+
+#container-img {
+    width: 60vw;
+}
+
+#container-form-title {
+    width: 80%;
+}
+
+form {
+    width: 80%;
+}
+
+img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#container-form {
+    direction: rtl;
+    width: 40vw;
+    padding: 0 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10em;
+}
+
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+    width: 100%;
+}
+
+.form-control>label {
+    font: normal normal bold 1rem/1.5rem Heebo;
+    color: #2C2C2C;
+}
+
+.form-control>input {
+    font: normal normal bold 1rem/1.5rem Heebo;
+    height: 50px;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: 0;
+    border-bottom: 4px solid #020253;
+}
+
+
+#submit {
+    width: 50%;
+    height: 50px;
+    background: #020253 0% 0% no-repeat padding-box;
+    font: normal normal bold 1.375rem/1.875rem Heebo;
+    letter-spacing: 0.33px;
+    color: #FFFFFF;
+}
+
+
+#container-form-title>h1 {
+    text-align: right;
+    font: normal normal 900 2.6875rem/3.9375rem Heebo;
+    color: #020253;
+}
+
+#container-form-title>p {
+    text-align: right;
+    font: normal normal normal 1.25rem/1.8125rem Heebo;
+    color: #020253;
+}
+
+@media screen and (max-width:1200px) {
+    #container {
+        flex-direction: column;
+    }
+
+    #container-img {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #container-form {
+        width: 77.3vw;
+        margin: 3em auto;
+    }
+
+    #container-form-title {
+        width: 77.3vw;
+    }
+
+    form {
+        width: 77.3vw;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    .form-control>label {
+        font: normal normal bold 0.625rem/0.875rem Heebo;
+    }
+
+    .form-control>input {
+        font: normal normal bold 0.625rem/0.875rem Heebo;
+        height: 34px;
+        border: 0;
+        border-bottom: 3px solid #020253;
+    }
+
+    #submit {
+        width: 100%;
+        height: 34px;
+        font: normal normal bold 0.875rem/1.1875em Heebo;
+        letter-spacing: 0.21px;
+    }
+
+    #container-form-title>h1 {
+        font: normal normal 900 1.75rem/2.5625rem Heebo;
+    }
+
+    #container-form-title>p {
+        font: normal normal normal 0.9375rem/1.375rem Heebo;
+    }
+
+}

@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header nav {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  direction: rtl;
+  background-color: #F6E7CD;
+  box-shadow: 0px 0px 20px wheat;
+  width: 100vw;
+  height: 8vh;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header nav ul li {
+  height: 8vh;
+}
+header nav ul li a {
+  padding: 0 30px;
+}
+header nav ul li img {
+  margin-left: 30px;
+  height: 100%;
+  border-radius: 100%;
+}
+header nav ul li a,
+header nav ul li p {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font: normal normal normal 1.125rem Fredoka;
+  text-decoration: none;
+  color: black;
+}
+header nav ul li a:visited {
+  color: black;
+}
+header nav li:nth-child(6) {
+  margin-right: auto;
+}
+header nav ul li svg {
+  height: 3vh;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(246, 231, 205, 0.7647058824);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 20px wheat;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+a:hover {
+  background-color: #F6E7CD;
+}
+
+#menu-button {
+  display: none;
+}
+
+#main {
+  direction: rtl;
+  margin-top: 8vh;
+  background-color: #FFF7E9;
+  width: 100vw;
+  height: 43vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#main #width-main {
+  width: 70%;
+}
+#main #width-main h1 {
+  text-align: center;
+  font: normal normal bold 5rem/7.375rem Rubik Scribble;
+  color: rgba(182, 153, 112, 0.667);
+}
+#main #width-main p {
+  text-align: center;
+  font: normal normal normal 1.25rem/1.875rem Fredoka;
+  color: rgb(130, 109, 81);
+}
+
+#skill {
+  background-color: #F6E7CD;
+  box-shadow: 0px 0px 20px wheat;
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  header .hideOnMobile {
+    display: none;
+  }
+  header #menu-button {
+    display: block;
+  }
+  header .sidebar {
+    width: 100vw;
+    height: 50vh;
+  }
+  #main {
+    height: 50vh;
+  }
+  #main #width-main {
+    width: 80%;
+  }
+  #main #width-main h1 {
+    font: normal normal bold 2.875rem/4.1875rem Rubik Scribble;
+  }
+  #main #width-main p {
+    font: normal normal normal 0.9375rem/1.5625rem Fredoka;
+  }
+  #skill img {
+    width: 12vw;
+  }
+}
+section {
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF7E9;
+  height: 66vh;
+  width: 100vw;
+}
+section img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+section h1 {
+  font: normal normal bold 2.1875rem/3.25rem Rubik Scribble;
+  color: rgba(182, 153, 112, 0.667);
+}
+section p {
+  text-align: center;
+  font: normal normal normal 1.25rem/1.8125rem Fredoka;
+  color: rgb(130, 109, 81);
+  width: 70%;
+}
+section #btn {
+  width: 13.5vw;
+  font: normal normal normal 1.25rem/1.875rem Fredoka;
+  background-color: #F6E7CD;
+  border-radius: 10px;
+  margin: 1em;
+}
+section #btn a {
+  text-decoration: none;
+}
+section #btn a:visited {
+  color: rgb(130, 109, 81);
+}
+section .link {
+  color: rgb(130, 109, 81);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+  section {
+    height: 80vh;
+    width: 100vw;
+  }
+  section h1 {
+    font: normal normal bold 1.5625rem/2.3125rem Rubik Scribble;
+  }
+  section p {
+    font: normal normal normal 0.9375rem/1.375rem Fredoka;
+    width: 90%;
+  }
+  section #btn {
+    width: 36.5vw;
+    font: normal normal normal 0.625rem/1.1875rem Fredoka;
+  }
+}
+article #background-div {
+  width: 100vw;
+  height: 8vh;
+  background-color: #FFF7E9;
+}
+article .article {
+  direction: rtl;
+  width: 100vw;
+  height: 144vh;
+  background-color: #FFF7E9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+article .article h1 {
+  font: normal normal bold 2.1875rem/3.25rem Rubik Scribble;
+  color: rgba(182, 153, 112, 0.667);
+}
+article .article p {
+  text-align: center;
+  font: normal normal normal 1.25rem/1.8125rem Fredoka;
+  color: rgb(130, 109, 81);
+}
+article #gallery {
+  height: 73%;
+  width: 67%;
+}
+article #gallery .card {
+  z-index: 1;
+  width: 23%;
+  height: 48%;
+}
+article #gallery .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+article #gallery .card-body h5 {
+  text-align: center;
+  font: normal normal bold 1.25rem/1.8125rem Fredoka;
+  color: rgb(130, 109, 81);
+}
+article #gallery .card-body p {
+  text-align: center;
+  font: normal normal normal 0.875rem/1.375rem Fredoka;
+}
+article #gallery .card-body #icon img {
+  width: 40px;
+  height: 40px;
+}
+article #gallery .btn-primary {
+  color: rgb(130, 109, 81);
+  text-decoration: none;
+  background-color: #F6E7CD;
+  border-color: #F6E7CD;
+}
+
+@media screen and (max-width: 992px) {
+  article .article {
+    direction: rtl;
+    width: 100vw;
+    height: 483vh;
+  }
+  article .article h1 {
+    font: normal normal bold 1.5625rem/2.3125rem Rubik Scribble;
+  }
+  article .article p {
+    text-align: center;
+    font: normal normal normal 0.875rem/1.375rem Fredoka;
+  }
+  article #gallery {
+    width: 80%;
+    height: 90%;
+  }
+  article #gallery .card {
+    width: 100%;
+    height: 20%;
+    margin: 1em;
+  }
+  article #gallery .card-body h5 {
+    font: normal normal bold 1rem/1.5rem Fredoka;
+  }
+  article #gallery .card-body p {
+    font: normal normal normal 1rem/1.5rem Fredoka;
+  }
+  article #gallery .card-body #icon img {
+    width: 22px;
+    height: 40px;
+  }
+}
+@media screen and (min-height: 576px) and (max-width: 992px) {
+  article .article {
+    width: 100vw;
+    height: 550vh;
+  }
+  article #gallery {
+    width: 80%;
+    height: 90%;
+  }
+  article #gallery .card {
+    width: 100%;
+    height: 20%;
+    margin: 1em;
+  }
+}
+footer {
+  width: 100vw;
+}
+footer #contact-us {
+  height: 89vh;
+  background-color: rgba(182, 153, 112, 0.667);
+}
+footer #contact-us #image {
+  width: 40vw;
+  height: 62vh;
+}
+footer #contact-us #image img {
+  width: 40vw;
+  height: 62vh;
+}
+footer #contact-us form {
+  direction: rtl;
+  width: 29vw;
+  margin-top: 15vh;
+  margin-left: 15.8vw;
+  color: white;
+}
+footer #contact-us form h1 {
+  font: normal normal bold 2.1875rem/3.25rem Rubik Scribble;
+}
+footer #contact-us form p {
+  font: normal normal normal 1.25rem/1.8125rem Fredoka;
+}
+footer #contact-us form .form-label {
+  font: normal normal normal 1rem/1.5rem Fredoka;
+}
+footer #contact-us form .btn-primary {
+  color: rgb(130, 109, 81);
+  text-decoration: none;
+  background-color: #F6E7CD;
+  border-color: #F6E7CD;
+}
+footer #box-icon {
+  height: 15.5vh;
+  background-color: #F6E7CD;
+  box-shadow: 0px 0px 20px wheat;
+}
+footer #box-icon .icon {
+  padding: 1em;
+}
+footer #box-icon .icon img {
+  width: 2vw;
+  height: 3.7vh;
+}
+footer #box-name {
+  height: 5vh;
+  font: normal normal normal 1rem/1.5rem Fredoka;
+  background-color: #F6E7CD;
+  padding: 1em;
+}
+
+@media screen and (max-width: 1200px) {
+  footer #contact-us {
+    height: 97.5vh;
+  }
+  footer #contact-us #image {
+    width: 50vw;
+    height: 20vh;
+  }
+  footer #contact-us #image img {
+    width: 50vw;
+    height: 20vh;
+  }
+  footer #contact-us form {
+    width: 80vw;
+    margin-top: 0;
+    margin-right: 0;
+    margin: auto;
+  }
+  footer #contact-us form h1 {
+    font: normal normal bold 1.5625rem/2.3125rem Rubik Scribble;
+  }
+  footer #contact-us form p {
+    font: normal normal normal 0.9375rem/1.375rem Fredoka;
+  }
+  footer #contact-us form .form-label {
+    font: normal normal normal 0.75rem/1.125rem Fredoka;
+  }
+  footer #box-name {
+    font: normal normal normal 0.75rem/1.125rem Fredoka;
+  }
+  #box-icon {
+    height: 65vh;
+  }
+  #box-icon .icon {
+    flex-direction: column;
+    padding: 1em;
+  }
+  #box-icon .icon img {
+    width: 10.81vw;
+    height: 6.08vh;
+  }
+}
+@media screen and (min-width: 1024px) and (max-height: 900px) and (max-width: 1200px) {
+  footer #contact-us #image {
+    width: 22vw;
+    height: 9vh;
+  }
+  footer #contact-us #image img {
+    width: 22vw;
+    height: 9vh;
+  }
+}
+@media screen and (max-width: 280px) {
+  footer #contact-us #image {
+    width: 40vw;
+    height: 16vh;
+  }
+  footer #contact-us #image img {
+    width: 40vw;
+    height: 16vh;
+  }
+}/*# sourceMappingURL=main.css.map */
