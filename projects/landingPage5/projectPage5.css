@@ -336,6 +336,7 @@ footer .icon img {
     .icon {
         width: 12.43vw;
         height: 7vh;
+        margin: 0.5em;
     }
 
     footer .icon img {
