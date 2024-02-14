@@ -109,16 +109,13 @@ footer {
         }
     }
 
+
     #box-icon {
-        height: 65vh;
 
         .icon {
-            flex-direction: column;
-            padding: 1em;
-
             img {
-                width: 10.81vw;
-                height: 6.08vh;
+                width: 6vw !important;
+                height: 6vh !important;
             }
         }
     }
