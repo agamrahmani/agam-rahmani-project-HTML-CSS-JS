@@ -133,7 +133,7 @@ window.addEventListener("keydown", ev => {
 
 
 function createApple() {
-    random = Math.round(Math.random() * (column * row)); // הפקודה math.floor הופכת את המספר לשלם
+    random = Math.round(Math.random() * (column * row));
     divs.forEach(div => {
         div.classList.remove('apple');
     });
