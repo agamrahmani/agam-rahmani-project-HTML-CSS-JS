@@ -29,7 +29,6 @@ let playerDeck;
 let computerDeck;
 let inRound;
 let isFirstGame = true;
-let stop;
 let winPlayerDeck = [];
 let winComputerDeck = [];
 let playerCard;
@@ -39,16 +38,11 @@ let sameArray = [];
 let numOfCardsLessThan4;
 
 if (isFirstGame) {
-    firstGame;
+    firstGame();
 }
 
-firstGame();
 
 document.addEventListener('click', () => {
-    // if (stop) {
-    //     startGame();
-    //     return;
-    // }
     if (inRound) {
         cleanBeforeRound();
     }
@@ -69,7 +63,7 @@ function firstGame() {
     const deckMidpoint = Math.ceil(deck.numberOfCards / 2);
     playerDeck = new Deck(deck.cards.slice(0, deckMidpoint));
     computerDeck = new Deck(deck.cards.slice(deckMidpoint, deck.numberOfCards));
-    stop = false;
+
     isFirstGame = false;
 
     cleanBeforeRound();
@@ -92,6 +86,7 @@ function updateDeckCount() {
 }
 
 function flipCard() {
+
     if (isRoundGameOver(playerDeck)) {
         if (winPlayerDeck.length == 0) {
             alert("אתה המפסיד של המשחק!");
@@ -116,6 +111,7 @@ function flipCard() {
         winComputerDeck = cleanWinArray(winComputerDeck);
         startGame();
     }
+
 
 
     inRound = true;
@@ -158,31 +154,33 @@ function flipCard() {
             setTimeout(sameCards, 2000);
         }
     }
+    setTimeout(() => {
+        if (isRoundGameOver(playerDeck)) {
+            if (winPlayerDeck.length == 0) {
+                alert("אתה המפסיד של המשחק!");
+                gameOver();
+            }
+        } else if (isRoundGameOver(computerDeck)) {
+            if (winComputerDeck.length == 0) {
+                alert("אתה המנצח של המשחק!");
+                gameOver();
+            }
+        }
 
-    if (isRoundGameOver(playerDeck)) {
-        if (winPlayerDeck.length == 0) {
-            alert("אתה המפסיד של המשחק!");
-            gameOver();
+        if (isRoundGameOver(playerDeck) || isRoundGameOver(computerDeck)) {
+            // לולאה שמכניסה מהמערך ניצחונות למערך הרגיל של הקלפים
+            for (let i = 0; i < winPlayerDeck.length; i++) {
+                playerDeck.push(winPlayerDeck[i]);
+            }
+            winPlayerDeck = cleanWinArray(winPlayerDeck);
+            for (let i = 0; i < winComputerDeck.length; i++) {
+                computerDeck.push(winComputerDeck[i]);
+            }
+            winComputerDeck = cleanWinArray(winComputerDeck);
+            startGame();
         }
-    } else if (isRoundGameOver(computerDeck)) {
-        if (winComputerDeck.length == 0) {
-            alert("אתה המנצח של המשחק!");
-            gameOver();
-        }
-    }
+    }, 2000);
 
-    if (isRoundGameOver(playerDeck) || isRoundGameOver(computerDeck)) {
-        // לולאה שמכניסה מהמערך ניצחונות למערך הרגיל של הקלפים
-        for (let i = 0; i < winPlayerDeck.length; i++) {
-            playerDeck.push(winPlayerDeck[i]);
-        }
-        winPlayerDeck = cleanWinArray(winPlayerDeck);
-        for (let i = 0; i < winComputerDeck.length; i++) {
-            computerDeck.push(winComputerDeck[i]);
-        }
-        winComputerDeck = cleanWinArray(winComputerDeck);
-        startGame();
-    }
 
 }
 
@@ -202,6 +200,17 @@ function cleanWinArray(winArray) {
 }
 
 function startGame() {
+    if (isRoundGameOver(playerDeck)) {
+        if (winPlayerDeck.length == 0) {
+            alert("אתה המפסיד של המשחק!");
+            gameOver();
+        }
+    } else if (isRoundGameOver(computerDeck)) {
+        if (winComputerDeck.length == 0) {
+            alert("אתה המנצח של המשחק!");
+            gameOver();
+        }
+    }
     playerDeck.shuffle();
     computerDeck.shuffle();
     inRound = false;
@@ -258,19 +267,6 @@ function sameCards() {
                     sameArray.push(playerCard);
                     sameArray.push(computerCard);
                     count = 1;
-                    setTimeout(() => {
-                        if (isRoundGameOver(playerDeck)) {
-                            if (winPlayerDeck.length == 0) {
-                                alert("אתה המפסיד של המשחק!");
-                                gameOver();
-                            }
-                        } else if (isRoundGameOver(computerDeck)) {
-                            if (winComputerDeck.length == 0) {
-                                alert("אתה המנצח של המשחק!");
-                                gameOver();
-                            }
-                        }
-                    }, 3000);
                     if (playerDeck.numberOfCards <= 3 || computerDeck.numberOfCards <= 3) {
                         if (winPlayerDeck.length != 0) {
                             for (let i = 0; i < winPlayerDeck.length; i++) {
