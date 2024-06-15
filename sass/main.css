@@ -235,6 +235,22 @@ section .link {
   border-radius: 10px;
 }
 
+@media screen and (max-width: 992px) {
+  #titleToProject .title h1 {
+    font: normal normal bold 2.875rem/4.1875rem Rubik Scribble;
+  }
+  #titleToProject .title p {
+    font: normal normal normal 0.9375rem/1.5625rem Fredoka;
+  }
+  #titleToProject .title #container-btn {
+    display: flex;
+    gap: 5px;
+  }
+  #titleToProject .title #container-btn #btn {
+    width: 35vw;
+    font: normal normal normal 0.9375rem/1.5625rem Fredoka;
+  }
+}
 #articleHTML,
 #articleJS {
   width: 100vw;

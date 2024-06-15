@@ -39,3 +39,27 @@
         }
     }
 }
+
+@media screen and (max-width: 992px) {
+    #titleToProject {
+        .title {
+            h1 {
+                font: normal normal bold 2.875rem/4.1875rem Rubik Scribble;
+            }
+
+            p {
+                font: normal normal normal 0.9375rem/1.5625rem Fredoka;
+            }
+
+            #container-btn {
+                display: flex;
+                gap: 5px;
+
+                #btn {
+                    width: 35vw;
+                    font: normal normal normal 0.9375rem/1.5625rem Fredoka;
+                }
+            }
+        }
+    }
+}
