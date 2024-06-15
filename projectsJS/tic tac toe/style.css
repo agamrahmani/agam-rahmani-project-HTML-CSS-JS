@@ -33,6 +33,7 @@ h1 {
 
 button {
     font-size: 1.1em;
+    color: black;
     background-color: white;
     border: 1px solid #ee8daf;
 }
