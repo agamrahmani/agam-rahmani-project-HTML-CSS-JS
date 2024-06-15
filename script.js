@@ -11,3 +11,13 @@ function hideSideBar() {
 function cv() {
     alert('קורות החיים יעלו לאתר בהמשך');
 }
+
+function showHTML() {
+    document.getElementById('articleHTML').style.display = 'flex';
+    document.getElementById('articleJS').style.display = 'none';
+}
+
+function showJS() {
+    document.getElementById('articleJS').style.display = 'flex';
+    document.getElementById('articleHTML').style.display = 'none';
+}

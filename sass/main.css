@@ -200,58 +200,87 @@ section .link {
     font: normal normal normal 0.625rem/1.1875rem Fredoka;
   }
 }
-article #background-div {
+#titleToProject #background-div {
   width: 100vw;
   height: 8vh;
   background-color: #FFF7E9;
 }
-article .article {
+#titleToProject .title {
   direction: rtl;
   width: 100vw;
-  height: 144vh;
+  height: 200px;
   background-color: #FFF7E9;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-article .article h1 {
+#titleToProject .title h1 {
   font: normal normal bold 2.1875rem/3.25rem Rubik Scribble;
   color: rgba(182, 153, 112, 0.667);
 }
-article .article p {
+#titleToProject .title p {
   text-align: center;
   font: normal normal normal 1.25rem/1.8125rem Fredoka;
   color: rgb(130, 109, 81);
 }
-article #gallery {
+#titleToProject .title #container-btn {
+  display: flex;
+  gap: 10px;
+}
+#titleToProject .title #container-btn #btn {
+  width: 13.5vw;
+  font: normal normal normal 1.25rem/1.875rem Fredoka;
+  color: rgb(130, 109, 81);
+  background-color: #F6E7CD;
+  border-radius: 10px;
+}
+
+#articleHTML,
+#articleJS {
+  width: 100vw;
+  height: 144vh;
+  direction: rtl;
+  background-color: #FFF7E9;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+#articleHTML #gallery,
+#articleJS #gallery {
   height: 73%;
   width: 67%;
+  display: flex;
 }
-article #gallery .card {
-  z-index: 1;
+#articleHTML #gallery .card,
+#articleJS #gallery .card {
   width: 23%;
   height: 48%;
 }
-article #gallery .card-body {
+#articleHTML #gallery .card-body,
+#articleJS #gallery .card-body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
-article #gallery .card-body h5 {
+#articleHTML #gallery .card-body h5,
+#articleJS #gallery .card-body h5 {
   text-align: center;
   font: normal normal bold 1.25rem/1.8125rem Fredoka;
   color: rgb(130, 109, 81);
 }
-article #gallery .card-body p {
+#articleHTML #gallery .card-body p,
+#articleJS #gallery .card-body p {
   text-align: center;
   font: normal normal normal 0.875rem/1.375rem Fredoka;
 }
-article #gallery .card-body #icon img {
+#articleHTML #gallery .card-body #icon img,
+#articleJS #gallery .card-body #icon img {
   width: 40px;
   height: 40px;
 }
-article #gallery .btn-primary {
+#articleHTML #gallery .btn-primary,
+#articleJS #gallery .btn-primary {
   color: rgb(130, 109, 81);
   text-decoration: none;
   background-color: #F6E7CD;
@@ -259,48 +288,43 @@ article #gallery .btn-primary {
 }
 
 @media screen and (max-width: 992px) {
-  article .article {
+  #articleHTML,
+  #articleJS {
     direction: rtl;
     width: 100vw;
     height: 483vh;
   }
-  article .article h1 {
-    font: normal normal bold 1.5625rem/2.3125rem Rubik Scribble;
-  }
-  article .article p {
-    text-align: center;
-    font: normal normal normal 0.875rem/1.375rem Fredoka;
-  }
-  article #gallery {
+  #gallery {
     width: 80%;
     height: 90%;
   }
-  article #gallery .card {
+  #gallery .card {
     width: 100%;
     height: 20%;
     margin: 1em;
   }
-  article #gallery .card-body h5 {
+  #gallery .card-body h5 {
     font: normal normal bold 1rem/1.5rem Fredoka;
   }
-  article #gallery .card-body p {
+  #gallery .card-body p {
     font: normal normal normal 1rem/1.5rem Fredoka;
   }
-  article #gallery .card-body #icon img {
+  #gallery .card-body #icon img {
     width: 22px;
     height: 40px;
   }
 }
 @media screen and (min-height: 576px) and (max-width: 992px) {
-  article .article {
+  #articleHTML,
+  #articleJS {
     width: 100vw;
     height: 550vh;
   }
-  article #gallery {
+  #gallery {
     width: 80%;
     height: 90%;
   }
-  article #gallery .card {
+  #gallery .card {
     width: 100%;
     height: 20%;
     margin: 1em;

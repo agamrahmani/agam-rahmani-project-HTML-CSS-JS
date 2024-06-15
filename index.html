@@ -73,123 +73,262 @@
 
     </section>
 
-    <article id="article">
+    <div id="titleToProject">
         <div id="background-div"></div>
-        <div class="article">
+        <div class="title">
             <h1>עבודות נבחרות</h1>
-            <p>תצוגה של דפי נחיתה הנדרשים לפרויקט, דף נחיתה מספר 8 הוא דף נחיתה שעשיתי לבד .</p>
-            <div id="gallery"
-                class="d-flex flex-lg-wrap justify-content-lg-between flex-column flex-lg-row align-items-center">
-                <div class="card">
-                    <img src="images/project1.png" class="card-img-top" alt="image of project 1">
-                    <div class="card-body">
-                        <h5 class="card-title">תן לנו להוביל אותך קדימה</h5>
-                        <p class="card-text">דף נחיתה 1</p>
-                        <div id="icon" class="d-flex">
-                            <img src="images/img-HTML.png" alt="html">
-                            <img src="images/img-CSS.png" alt="css">
-                            <img src="images/img-JS.png" alt="js">
-                        </div>
-                        <a href="./displayPage/page1.html" class="btn btn-primary">לעמוד הפרויקט</a>
+            <p>תצוגה של כל הפרויקטים שבצעתי, בלחיצה על כל כפתור תוכלו לראות את הפרויקטים המתאימים לנושא.</p>
+            <div id="container-btn">
+                <button id="btn" onclick="showHTML()">HTML& CSS projects</button>
+                <button id="btn" onclick="showJS()">JS projects</button>
+            </div>
+        </div>
+    </div>
+
+
+    <article id="articleHTML">
+        <div id="gallery"
+            class="d-flex flex-lg-wrap justify-content-lg-between flex-column flex-lg-row align-items-center">
+            <div class="card">
+                <img src="images/project1.png" class="card-img-top" alt="image of project 1">
+                <div class="card-body">
+                    <h5 class="card-title">תן לנו להוביל אותך קדימה</h5>
+                    <p class="card-text">דף נחיתה 1</p>
+                    <div id="icon" class="d-flex">
+                        <img src="images/img-HTML.png" alt="html">
+                        <img src="images/img-CSS.png" alt="css">
+                        <img src="images/img-JS.png" alt="js">
                     </div>
+                    <a href="./displayPage/page1.html" class="btn btn-primary">לעמוד הפרויקט</a>
                 </div>
-                <div class="card">
-                    <img src="images/project2.png" class="card-img-top" alt="image of project 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Here & Now</h5>
-                        <p class="card-text">דף נחיתה 2</p>
-                        <div id="icon" class="d-flex flex-clowmn">
-                            <img src="images/img-HTML.png" alt="html">
-                            <img src="images/img-CSS.png" alt="css">
-                            <img src="images/img-JS.png" alt="js">
-                        </div>
-                        <a href="./displayPage/page2.html" class="btn btn-primary">לעמוד הפרויקט</a>
+            </div>
+            <div class="card">
+                <img src="images/project2.png" class="card-img-top" alt="image of project 2">
+                <div class="card-body">
+                    <h5 class="card-title">Here & Now</h5>
+                    <p class="card-text">דף נחיתה 2</p>
+                    <div id="icon" class="d-flex flex-clowmn">
+                        <img src="images/img-HTML.png" alt="html">
+                        <img src="images/img-CSS.png" alt="css">
+                        <img src="images/img-JS.png" alt="js">
                     </div>
+                    <a href="./displayPage/page2.html" class="btn btn-primary">לעמוד הפרויקט</a>
                 </div>
-                <div class="card">
-                    <img src="images/project3.png" class="card-img-top" alt="image of project 3">
-                    <div class="card-body">
-                        <h5 class="card-title">תן לנו להוביל אותך קדימה</h5>
-                        <p class="card-text">דף נחיתה 3</p>
-                        <div id="icon" class="d-flex flex-clowmn">
-                            <img src="images/img-HTML.png" alt="html">
-                            <img src="images/img-CSS.png" alt="css">
-                            <img src="images/img-JS.png" alt="js">
-                        </div>
-                        <a href="./displayPage/page3.html" class="btn btn-primary">לעמוד הפרויקט</a>
+            </div>
+            <div class="card">
+                <img src="images/project3.png" class="card-img-top" alt="image of project 3">
+                <div class="card-body">
+                    <h5 class="card-title">תן לנו להוביל אותך קדימה</h5>
+                    <p class="card-text">דף נחיתה 3</p>
+                    <div id="icon" class="d-flex flex-clowmn">
+                        <img src="images/img-HTML.png" alt="html">
+                        <img src="images/img-CSS.png" alt="css">
+                        <img src="images/img-JS.png" alt="js">
                     </div>
+                    <a href="./displayPage/page3.html" class="btn btn-primary">לעמוד הפרויקט</a>
                 </div>
-                <div class="card">
-                    <img src="images/project4.png" class="card-img-top" alt="image of project 4">
-                    <div class="card-body">
-                        <h5 class="card-title">לגלות את העולם</h5>
-                        <p class="card-text">דף נחיתה 4</p>
-                        <div id="icon" class="d-flex flex-clowmn">
-                            <img src="images/img-HTML.png" alt="html">
-                            <img src="images/img-CSS.png" alt="css">
-                            <img src="images/img-JS.png" alt="js">
-                        </div>
-                        <a href="./displayPage/page4.html" class="btn btn-primary">לעמוד הפרויקט</a>
+            </div>
+            <div class="card">
+                <img src="images/project4.png" class="card-img-top" alt="image of project 4">
+                <div class="card-body">
+                    <h5 class="card-title">לגלות את העולם</h5>
+                    <p class="card-text">דף נחיתה 4</p>
+                    <div id="icon" class="d-flex flex-clowmn">
+                        <img src="images/img-HTML.png" alt="html">
+                        <img src="images/img-CSS.png" alt="css">
+                        <img src="images/img-JS.png" alt="js">
                     </div>
+                    <a href="./displayPage/page4.html" class="btn btn-primary">לעמוד הפרויקט</a>
                 </div>
-                <div class="card">
-                    <img src="images/project5.png" class="card-img-top" alt="image of project 5">
-                    <div class="card-body">
-                        <h5 class="card-title">לחשוב מחוץ לקופסה</h5>
-                        <p class="card-text">דף נחיתה 5</p>
-                        <div id="icon" class="d-flex flex-clowmn">
-                            <img src="images/img-HTML.png" alt="html">
-                            <img src="images/img-CSS.png" alt="css">
-                            <img src="images/img-JS.png" alt="js">
-                        </div>
-                        <a href="./displayPage/page5.html" class="btn btn-primary">לעמוד הפרויקט</a>
+            </div>
+            <div class="card">
+                <img src="images/project5.png" class="card-img-top" alt="image of project 5">
+                <div class="card-body">
+                    <h5 class="card-title">לחשוב מחוץ לקופסה</h5>
+                    <p class="card-text">דף נחיתה 5</p>
+                    <div id="icon" class="d-flex flex-clowmn">
+                        <img src="images/img-HTML.png" alt="html">
+                        <img src="images/img-CSS.png" alt="css">
+                        <img src="images/img-JS.png" alt="js">
                     </div>
+                    <a href="./displayPage/page5.html" class="btn btn-primary">לעמוד הפרויקט</a>
                 </div>
-                <div class="card">
-                    <img src="images/project6.png" class="card-img-top" alt="image of project 6">
-                    <div class="card-body">
-                        <h5 class="card-title">קפה טוב לבוקר טוב</h5>
-                        <p class="card-text">דף נחיתה 6</p>
-                        <div id="icon" class="d-flex flex-clowmn">
-                            <img src="images/img-HTML.png" alt="html">
-                            <img src="images/img-CSS.png" alt="css">
-                            <img src="images/img-JS.png" alt="js">
-                        </div>
-                        <a href="./displayPage/page6.html" class="btn btn-primary">לעמוד הפרויקט</a>
+            </div>
+            <div class="card">
+                <img src="images/project6.png" class="card-img-top" alt="image of project 6">
+                <div class="card-body">
+                    <h5 class="card-title">קפה טוב לבוקר טוב</h5>
+                    <p class="card-text">דף נחיתה 6</p>
+                    <div id="icon" class="d-flex flex-clowmn">
+                        <img src="images/img-HTML.png" alt="html">
+                        <img src="images/img-CSS.png" alt="css">
+                        <img src="images/img-JS.png" alt="js">
                     </div>
+                    <a href="./displayPage/page6.html" class="btn btn-primary">לעמוד הפרויקט</a>
                 </div>
-                <div class="card">
-                    <img src="images/project7.png" class="card-img-top" alt="image of project 7">
-                    <div class="card-body">
-                        <h5 class="card-title">ייעוץ חינם</h5>
-                        <p class="card-text">דף נחיתה 7</p>
-                        <div id="icon" class="d-flex flex-clowmn">
-                            <img src="images/img-HTML.png" alt="html">
-                            <img src="images/img-CSS.png" alt="css">
-                            <img src="images/img-JS.png" alt="js">
-                        </div>
-                        <a href="./displayPage/page7.html" class="btn btn-primary">לעמוד הפרויקט</a>
+            </div>
+            <div class="card">
+                <img src="images/project7.png" class="card-img-top" alt="image of project 7">
+                <div class="card-body">
+                    <h5 class="card-title">ייעוץ חינם</h5>
+                    <p class="card-text">דף נחיתה 7</p>
+                    <div id="icon" class="d-flex flex-clowmn">
+                        <img src="images/img-HTML.png" alt="html">
+                        <img src="images/img-CSS.png" alt="css">
+                        <img src="images/img-JS.png" alt="js">
                     </div>
+                    <a href="./displayPage/page7.html" class="btn btn-primary">לעמוד הפרויקט</a>
                 </div>
-                <div class="card">
-                    <img src="images/project8.png" class="card-img-top" alt="image of project 8">
+            </div>
+            <div class="card">
+                <img src="images/project8.png" class="card-img-top" alt="image of project 8">
+                <div class="card-body">
+                    <h5 class="card-title">ניבה קשת</h5>
+                    <p class="card-text">דף נחיתה 8
+                    </p>
+                    <div id="icon" class="d-flex flex-clowmn">
+                        <img src="images/img-HTML.png" alt="html">
+                        <img src="images/img-CSS.png" alt="css">
+                        <img src="images/img-JS.png" alt="js">
+                    </div>
+                    <a href="./displayPage/page8.html" class="btn btn-primary">לעמוד הפרויקט</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article id="articleJS">
+        <div id="gallery"
+            class="d-flex flex-lg-wrap justify-content-lg-between flex-column flex-lg-row align-items-center">
+            <div class="card">
+                <img src="images/memory-game.png" class="card-img-top" alt="image of project memory game">
+                <div class="card-body">
+                    <h5 class="card-title">משחק הזיכרון</h5>
+                    <p class="card-text">פרויקט מספר 1
+                    </p>
+                    <div id="icon" class="d-flex flex-clowmn">
+                        <img src="images/img-HTML.png" alt="html">
+                        <img src="images/img-CSS.png" alt="css">
+                        <img src="images/img-JS.png" alt="js">
+                    </div>
+                    <a href="#" class="btn btn-primary">לעמוד הפרויקט</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/weather.png" class="card-img-top" alt="image of project weather">
+                <div class="card-body">
+                    <h5 class="card-title">מזג אוויר</h5>
+                    <p class="card-text">פרויקט מספר 2
+                    </p>
+                    <div id="icon" class="d-flex flex-clowmn">
+                        <img src="images/img-HTML.png" alt="html">
+                        <img src="images/img-CSS.png" alt="css">
+                        <img src="images/img-JS.png" alt="js">
+                    </div>
+                    <a href="#" class="btn btn-primary">לעמוד הפרויקט</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/snake.png" class="card-img-top" alt="image of project snake">
+                <div class="card-body">
+                    <h5 class="card-title">סנייק</h5>
+                    <p class="card-text">פרויקט מספר 3
+                    </p>
+                    <div id="icon" class="d-flex flex-clowmn">
+                        <img src="images/img-HTML.png" alt="html">
+                        <img src="images/img-CSS.png" alt="css">
+                        <img src="images/img-JS.png" alt="js">
+                    </div>
+                    <a href="#" class="btn btn-primary">לעמוד הפרויקט</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/tic-tac-toe.png" class="card-img-top" alt="image of project tic tac toe">
+                <div class="card-body">
+                    <h5 class="card-title">איקס עיגול</h5>
+                    <p class="card-text">פרויקט מספר 4
+                    </p>
+                    <div id="icon" class="d-flex flex-clowmn">
+                        <img src="images/img-HTML.png" alt="html">
+                        <img src="images/img-CSS.png" alt="css">
+                        <img src="images/img-JS.png" alt="js">
+                    </div>
+                    <a href="#" class="btn btn-primary">לעמוד הפרויקט</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/page-builder.png" class="card-img-top" alt="image of project builder page">
+                <div class="card-body">
+                    <h5 class="card-title">בונה מסכים</h5>
+                    <p class="card-text"> פרויקט מספר 5
+                    </p>
+                    <div id="icon" class="d-flex flex-clowmn">
+                        <img src="images/img-HTML.png" alt="html">
+                        <img src="images/img-CSS.png" alt="css">
+                        <img src="images/img-JS.png" alt="js">
+                    </div>
+                    <a href="#" class="btn btn-primary">לעמוד הפרויקט</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/war.png" class="card-img-top" alt="image of project war cards">
+                <div class="card-body">
+                    <h5 class="card-title">מלחמה קלפים</h5>
+                    <p class="card-text">פרויקט מספר 6
+                    </p>
+                    <div id="icon" class="d-flex flex-clowmn">
+                        <img src="images/img-HTML.png" alt="html">
+                        <img src="images/img-CSS.png" alt="css">
+                        <img src="images/img-JS.png" alt="js">
+                    </div>
+                    <a href="#" class="btn btn-primary">לעמוד הפרויקט</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/country.png" class="card-img-top" alt="image of project countreis world">
+                <div class="card-body">
+                    <h5 class="card-title">מדינות עולם</h5>
+                    <p class="card-text">פרויקט מספר 7
+                    </p>
+                    <div id="icon" class="d-flex flex-clowmn">
+                        <img src="images/img-HTML.png" alt="html">
+                        <img src="images/img-CSS.png" alt="css">
+                        <img src="images/img-JS.png" alt="js">
+                    </div>
+                    <a href="#" class="btn btn-primary">לעמוד הפרויקט</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/math.png" class="card-img-top" alt="image of project math">
+                <div class="card-body">
+                    <h5 class="card-title">לומדת חשבון</h5>
+                    <p class="card-text">פרויקט מספר 8
+                    </p>
+                    <div id="icon" class="d-flex flex-clowmn">
+                        <img src="images/img-HTML.png" alt="html">
+                        <img src="images/img-CSS.png" alt="css">
+                        <img src="images/img-JS.png" alt="js">
+                    </div>
+                    <a href="#" class="btn btn-primary">לעמוד הפרויקט</a>
+                </div>
+            </div>
+            <!-- <div class="card">
+                    <img src="images/task.png" class="card-img-top" alt="image of project task">
                     <div class="card-body">
-                        <h5 class="card-title">ניבה קשת</h5>
-                        <p class="card-text">דף נחיתה 8
+                        <h5 class="card-title">משימות</h5>
+                        <p class="card-text">פרויקט מספר 9
                         </p>
                         <div id="icon" class="d-flex flex-clowmn">
                             <img src="images/img-HTML.png" alt="html">
                             <img src="images/img-CSS.png" alt="css">
                             <img src="images/img-JS.png" alt="js">
                         </div>
-                        <a href="./displayPage/page8.html" class="btn btn-primary">לעמוד הפרויקט</a>
+                        <a href="#" class="btn btn-primary">לעמוד הפרויקט</a>
                     </div>
-                </div>
-            </div>
+                </div> -->
         </div>
     </article>
 
-    <div id="projectJS"></div>
 
     <footer id="footer">
         <div id="contact-us" class="d-xl-flex">
