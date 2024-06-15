@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+    <title>סנייק</title>
+</head>
+
+<body onload="createBoard()">
+    <h1>סנייק</h1>
+    <div id="container">
+        <div id="container-score">
+            <p id="score"><img src="apple.png"> <b>:</b> <span>0</span></p>
+            <p id="record"><img src="goblet.png"> <b>:</b> <span>0</span></p>
+        </div>
+        <div id="board"></div>
+        <div id="container-btnGame">
+            <button id="newGame" class="game" onclick="newGame()">משחק חדש</button>
+            <button id="stop" class="game" onclick="stopGame()">עצירה</button>
+            <button id="continu" class="game" onclick="continuGame()">להמשיך</button>
+        </div>
+        <div id="container-center">
+            <div id="container-responsiveKeys">
+                <img src="./left.png" alt="left" onclick="move('left')">
+                <img src="./top.png" alt="top" onclick="move('up')">
+                <img src="./right.png" alt="right" onclick="move('right')">
+                <img src="./down.png" alt="down" onclick="move('down')">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

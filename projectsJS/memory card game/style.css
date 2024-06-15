@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap');
+
+body {
+    direction: rtl;
+    font-family: 'Rubik', sans-serif;
+    background-color: gainsboro;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 16px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 600px;
+    height: 600px;
+    gap: 10px;
+    margin: 30px auto;
+}
+
+#board>.card {
+    background-color: white;
+    display: flex;
+    width: 150px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease;
+    opacity: 1;
+
+}
+
+
+.imageElem {
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+.rotate {
+    transform: rotateY(180deg);
+}
+
+.message {
+    font-size: 2em;
+    border-radius: 8px;
+    color: black;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.message.visible {
+    opacity: 1;
+    visibility: visible;
+    animation: pop-in 0.5s ease forwards;
+}
+
+@keyframes pop-in {
+    0% {
+        transform: translate((-50%, -50%)) scale(0);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@media screen and (max-width:815px) {
+    #board {
+        grid-template-columns: repeat(3, 1fr);
+        width: 300px;
+        height: 400px;
+        gap: 5px;
+        margin: 15px auto;
+    }
+
+    #board>.card {
+        width: 100px;
+        height: 100px;
+    }
+
+    .imageElem {
+        width: 30px;
+        height: 30px;
+
+    }
+
+    .message {
+        top: 100px;
+        font-size: 1em;
+    }
+}

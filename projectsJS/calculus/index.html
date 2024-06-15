@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>לומדת חשבון</title>
+</head>
+
+<body>
+    <h1>משחק ללימודי חשבון</h1>
+    <header id="containerBackground">
+        <div id="container-option">
+            <h3>אפשרויות המשחק</h3>
+            <label>בחר טווח מספרים</label>
+            <select oninput="numbersSelect(this)">
+                <option></option>
+                <option>1-10</option>
+                <option>1-100</option>
+                <option>1-1000</option>
+            </select>
+
+            <label>בחר אופרטור</label>
+            <select oninput="typeSelect(this)">
+                <option></option>
+                <option>+ חיבור</option>
+                <option>- חיסור</option>
+                <option>* כפל</option>
+                <option>/ חילוק</option>
+            </select>
+        </div>
+        <img src="imh.png" alt="image of operator">
+    </header>
+
+
+    <div id="containerExercise">
+        <input type="number" id="answer">
+        <button id="check" onclick="check()">בדיקה</button>
+    </div>
+    <div id="text"></div>
+    <div id="container-table">
+        <table id="tableResult">
+            <thead>
+                <tr>
+                    <th>תרגיל</th>
+                    <th>תשובה נכונה</th>
+                    <th>תשובה שגויה</th>
+                    <th>נקודות</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div id="grade"></div>
+    <footer></footer>
+</body>
+
+</html>
