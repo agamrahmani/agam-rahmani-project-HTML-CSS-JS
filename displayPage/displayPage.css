@@ -110,6 +110,15 @@ nav ul li a:visited {
     height: 100px;
 }
 
+.imageBig {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.api {
+    margin-left: 40px;
+}
+
 #img-of-project {
     width: 100vw;
     height: 94vh;
@@ -156,6 +165,20 @@ footer {
     #information button {
         width: 36.5vw;
         font: normal normal normal 0.75rem/1.375rem Fredoka;
+    }
+
+    #icon img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .imageBig {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .api {
+        margin-left: 20px;
     }
 
     #img-of-project {
