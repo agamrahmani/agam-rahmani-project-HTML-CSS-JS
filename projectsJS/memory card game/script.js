@@ -22,7 +22,7 @@ let count = 0; // בודק אם נלחצו כבר 2 קלפים לטובת השו
 let compare = []; // מערך להשוואה בין 2 הקלפים
 let same = 0; // משתנה שמונה את כמות הפעמים שהצילחו לנחש - 6 מקסימלי ונגמר המשחק
 let isFirstGame = true;
-
+let previousElement = null;
 
 
 function createBoard(imagesArray) {
@@ -58,19 +58,21 @@ function clearBoard() {
 
 function rotate(elem) {
     numberClick += 1;
+    console.log()
     elem.classList.add('rotate');
     setTimeout(() => {
         elem.querySelector('.imageElem').style.display = "block";
     }, 250);
 
-    setTimeout(() => {
-        elem.classList.remove('rotate');
-        elem.querySelector('.imageElem').style.display = "none";
-    }, 1000);
-
-    elem.querySelector('.imageElem');
     compare.push(elem.querySelector('.imageElem'));
     if (count == 1) {
+        setTimeout(() => {
+            previousElement.classList.remove('rotate');
+            elem.classList.remove('rotate');
+            previousElement.querySelector('.imageElem').style.display = "none";
+            elem.querySelector('.imageElem').style.display = "none";
+        }, 1000);
+
         if (compare[0].src == compare[1].src) {
             same += 1;
             cardsArray.forEach(card => {
@@ -90,7 +92,6 @@ function rotate(elem) {
 
         setTimeout(() => {
             if (numberClick = 3) {
-                console.log('hi');
                 numberClick = 1;
             }
         }, 1900);
@@ -137,7 +138,11 @@ function newGame() {
     cardsArray.forEach(card => {
         card.addEventListener('click', (e) => {
             if (numberClick < 3) {
-                rotate(e.target);
+                const currentElement = e.target;
+                rotate(currentElement);
+                if (numberClick == 2) {
+                    previousElement = currentElement;
+                }
             }
         });
     });
