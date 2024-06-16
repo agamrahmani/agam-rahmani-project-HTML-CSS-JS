@@ -20,7 +20,6 @@ const getDataAsync = async () => {
             throw new Error("Network response was not ok");
         }
         const data = await res.json();
-        console.log(data);
         countries = data;
         countriesFull = [...data];
     } catch (err) {
